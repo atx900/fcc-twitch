@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/twitch.css">
+    <title>Twitch TV</title>
+  </head>
+  <body class="container-fluid">
+
+    <!-- page header -->
+    <div class="container-row text-center">
+      <h1>Twitch TV</h1>
+    </div>
+
+    <!-- control buttons -->
+    <div class="container-row form-group text-center">
+      <span>
+        <button class="btn btn-default" id="getAll" name="button">All</button>
+        <button class="btn btn-default" id="getOnline" name="button">Online</button>
+        <button class="btn btn-default" id="getOffline" name="button">Offline</button>
+      </span>
+    </div>
+
+    <div class="container-row text-center">
+      <span>Click any of the buttons to show results</span>
+    </div>
+
+    <div class="container-row text-center">
+      <p></p>
+    </div>
+
+    <!-- display twitch tv entries here -->
+    <div class="content">
+
+      <div class="column-left">
+      </div>
+
+      <div class="column-center">
+
+        <!-- display individual entries below -->
+        <div class="wrapper">
+          <div class="user-logo"></div>
+          <div class="user-name"></div>
+          <div class="user-stream"></div>
+        </div>
+      </div>
+
+      <div class="column-right">
+      </div>
+
+    </div>
+    <script src="scripts/twitch.js" charset="utf-8"></script>
+  </body>
+</html>

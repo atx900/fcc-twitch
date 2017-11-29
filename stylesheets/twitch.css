@@ -1,0 +1,43 @@
+body {
+  font-size: 0.9rem;
+}
+
+.content {                                                                    /* CSS container twitch tv entries */
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, minmax(100px, auto));
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.column-center {
+  grid-column: 2 / 4
+}
+
+.img-online {
+  border: 2px;
+  border-color: Green;
+  border-style: solid;
+}
+
+.img-offline {
+  border: 2px;
+  border-color: Red;
+  border-style: solid;
+}
+
+.user-logo {
+  grid-row-end: 3;
+  grid-row-start: 1;
+}
+
+.user-name {
+  justify-self: start;
+}
+
+.wrapper {                                                                    /* CSS container for individual twitch tv entries */
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 25px 50px 10px;
+}
